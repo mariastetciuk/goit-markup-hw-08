@@ -1,0 +1,33 @@
+.services {
+   padding-top: 0;
+}
+    
+.services__item {
+   position: relative;
+}
+    
+.services__thumb {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 70px;
+    
+   background: rgba(47, 48, 58, 0.8);
+}
+    
+.services__name {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: calc(16 / 14);
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+    
+   color: #FFFFFF;
+}
+

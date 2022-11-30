@@ -1,0 +1,25 @@
+.hero {
+    max-width: 1600px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    
+    background-color: var(--hero-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-backround.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__btn {
+    min-width: 216px;
+    padding: 10px 32px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
