@@ -1,20 +1,40 @@
 .contacts {
+    @media screen and (max-width: 767px) {
+       display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+       display: block;
+    }
+}
+
+
+.contacts {
+ @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: auto;
+ }
 }
 
 .contacts__item:not(:last-child) {
-    margin-right: 50px;
+ @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+ }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+  }   
 }
 
 .contacts__link {
+ @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
+    }
+    
 
     font-weight: 500;
     font-size: 14px;
@@ -23,6 +43,11 @@
     color: var(--main-text-color);
 
     transition: color var(--duration-timing);
+
+ @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+ }
 
     &:hover,
     &:focus {
@@ -33,6 +58,10 @@
 .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
+
+ @media screen and (min-width: 1200px) {
+    
+  }
 }
 
 

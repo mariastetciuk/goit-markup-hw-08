@@ -1,9 +1,16 @@
 // =======================filter=========================
 .filter {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: start;
+   gap: 15px;
+   margin-bottom: 50px;
+
+@media screen and (min-width: 768px) {
    justify-content: center;
    gap: 8px;
-   margin-bottom: 50px;
+
+}
 }
  
 .filter__button {
@@ -33,9 +40,19 @@
 }
 
 // ====================================project========================
+.project__item {
+   --items: 1;
+
+   @media screen and (min-width: 768px) {
+      --items: 2;
+   }
+
+   @media screen and (min-width: 1200px) {
+      --items: 3;
+   }
+}
 .project__link {
    display: inline-block;
-
    transition: box-shadow var(--duration-timing);
 
    &:hover,

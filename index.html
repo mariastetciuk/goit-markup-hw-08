@@ -28,10 +28,25 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__container container">
-        <nav class="nav">
-          <a href="./index.html" lang="en" class="logo header__logo"
-            >Web<span class="logo__span">Studio</span></a
+        <a href="./index.html" lang="en" class="logo header__logo"
+          >Web<span class="logo__span">Studio</span></a
+        >
+        <button
+          type="button"
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu__icon"
+            width="40"
+            height="40"
+            aria-label="перемикач мобільного меню"
           >
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--carrent"
@@ -91,8 +106,8 @@
       <section class="benefits section">
         <div class="container">
           <h2 class="title visually-hidden">Наші переваги</h2>
-          <ul class="benefits">
-            <li class="benefits__item">
+          <ul class="benefits card-set">
+            <li class="benefits__item card-set__item">
               <div class="benefits__icon">
                 <svg
                   class="icon"
@@ -109,7 +124,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-set__item">
               <div class="benefits__icon">
                 <svg
                   class="icon"
@@ -126,7 +141,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-set__item">
               <div class="benefits__icon">
                 <svg
                   class="icon"
@@ -142,7 +157,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-set__item">
               <div class="benefits__icon">
                 <svg
                   class="icon"
@@ -479,8 +494,8 @@
       <section class="clients section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
-          <ul class="clients__list">
-            <li class="clients__item">
+          <ul class="clients__list card-set">
+            <li class="clients__item card-set__item">
               <a
                 class="clients__link"
                 href=""
@@ -493,7 +508,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="clients__item card-set__item">
               <a
                 class="clients__link"
                 href=""
@@ -506,7 +521,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="clients__item card-set__item">
               <a
                 class="clients__link"
                 href=""
@@ -519,7 +534,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="clients__item card-set__item">
               <a
                 class="clients__link"
                 href=""
@@ -532,7 +547,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="clients__item card-set__item">
               <a
                 class="clients__link"
                 href=""
@@ -545,7 +560,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="clients__item card-set__item">
               <a
                 class="clients__link"
                 href=""
@@ -593,7 +608,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__group">
+        <div class="footer-socials__wrapper">
           <h2 class="footer__title">приєднуйтесь</h2>
           <ul class="socials footer__socials">
             <li class="socials__item">
@@ -650,7 +665,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__group">
+        <div class="footer-form__wrapper">
           <h2 class="footer__title">Підпишіться на розсилку</h2>
           <form class="footer-form">
             <label class="footer-form__label">
@@ -758,6 +773,91 @@
         </form>
       </div>
     </div>
+    <!-- ===========mobil-menu============ -->
+    <div class="menu__conteiner js-menu-container" id="mobile-menu">
+      <button type="submit" class="menu__toggle js-close-menu">
+        <svg class="menu__icon" width="40" height="40">
+          <use class="close-menu" href="./images/icons.svg#close_menu"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a
+            href="./index.html"
+            class="mobile-menu__link mobile-menu__link--carrent"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__tel">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__email">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a
+            class="mobile-socials__link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="instagram іконка"
+            >Instagram
+          </a>
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            class="mobile-socials__link"
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="twitter іконка"
+            >Twitter
+          </a>
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            class="mobile-socials__link"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="facebook іконка"
+            >Facebook
+          </a>
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            class="mobile-socials__link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="linkedin іконка"
+            >Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>

@@ -1,10 +1,17 @@
 .logo {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--logo-color);
+
+@media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__span {

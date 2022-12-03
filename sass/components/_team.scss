@@ -1,9 +1,18 @@
 .team {
-   background-color: var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .team__list {
+  --items: 1;
+
+ @media screen and (min-width: 768px) {
+  --items: 2;
+  }
+
+ @media screen and (min-width: 1200px) {
   --items: 4;
+  }
+  
 }
     
 .team__item {

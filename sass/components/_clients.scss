@@ -1,25 +1,23 @@
-.clients__list {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
 .clients__item {
-   width: 170px;
-   height: 92px;
+   --items: 2;
 
-   &:not(:last-child) {
-     margin-right: 30px;
+ @media screen and (min-width: 768px) {
+      --items: 3;
    }
+
+ @media screen and (min-width: 1200px) {
+    --items: 6;
+ }
 }
   
 .clients__link {
    display: flex;
    justify-content: center;
    align-items: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
 
-   width: 100%;
-   height: 100%;
+
    border: 1px solid var(--border-color-social);
    border-radius: 4px;
    color: var(--border-color-social);

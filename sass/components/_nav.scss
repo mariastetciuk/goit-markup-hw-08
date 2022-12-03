@@ -1,8 +1,13 @@
 .nav {
-   display: flex;
-   align-items: center;
+   @media screen and (max-width: 767px) {
+      display: none;
+   } 
+
+   @media screen and (min-width: 768px) {
+      display: block;
+   }
 }
-    
+
 .nav__list {
    display: flex;
    align-items: center;
@@ -14,7 +19,7 @@
 
 .nav__link {
    position: relative;
-   display: inline-block;
+   display: block;
    padding-top: 32px;
    padding-bottom: 32px;
 
