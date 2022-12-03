@@ -1279,6 +1279,7 @@ a {
   padding: 48px 40px;
   background-color: var(--main-background-color);
   z-index: 999;
+  overflow-y: scroll;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform var(--duration-timing);
