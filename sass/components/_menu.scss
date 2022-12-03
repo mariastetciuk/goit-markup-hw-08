@@ -29,6 +29,7 @@
     padding: 48px 40px;
     background-color: var(--main-background-color);
     z-index: 999;
+    overflow-y: scroll;
 
     transform: translateY(-100%);
     transition: transform var(--duration-timing);
