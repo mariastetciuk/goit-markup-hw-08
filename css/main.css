@@ -935,10 +935,22 @@ a {
 }
 
 .project__description {
-  font-size: 18px;
-  line-height: 1.5555555556;
-  letter-spacing: 0.03em;
+  font-size: 15px;
+  line-height: 1.2;
   color: #FFFFFF;
+}
+@media screen and (max-width: 479px) {
+  .project__description {
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 480px) {
+  .project__description {
+    font-size: 18px;
+    line-height: 1.5555555556;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
 }
 
 .project__wrapper {

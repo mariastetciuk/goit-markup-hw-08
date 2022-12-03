@@ -92,11 +92,23 @@
 }
 
 .project__description {
+   font-size: 15px;
+   line-height: calc(18 / 15);
+   color: #FFFFFF;
+
+@media screen and (max-width: 479px) {
+   overflow-y: scroll;
+}
+
+ @media screen and (min-width: 480px) {
    font-size: 18px;
    line-height: calc(28 / 18);
    letter-spacing: 0.03em;
-
+   
    color: #FFFFFF;
+ }
+
+   
 }
 
 .project__wrapper {
