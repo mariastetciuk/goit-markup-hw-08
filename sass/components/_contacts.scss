@@ -1,15 +1,10 @@
 .contacts {
-    @media screen and (max-width: 767px) {
-       display: none;
-    }
+   display: none;
 
-    @media screen and (min-width: 768px) {
-       display: block;
-    }
-}
-
-
-.contacts {
+ @media screen and (min-width: 768px) {
+   display: block;
+   }
+   
  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
