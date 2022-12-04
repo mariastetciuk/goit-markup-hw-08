@@ -1,12 +1,12 @@
 .main-title {
-    width: 360px;
+    max-width: 360px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 18px;
-    line-height: calc(42 / 26);
+    font-size: 20px;
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -15,20 +15,28 @@
 
  @media screen and (min-width: 480px) {
     font-size: 26px;
+   line-height: calc(42 / 26);
  }
 
  @media screen and (min-width: 1200px) {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
+   line-height: calc(60 / 44);
  }
 }
 .title {
-    margin-bottom: 50px;
+   margin-bottom: 30px;
 
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-title-color);
+   font-size: 28px;
+   line-height: calc(33 / 28);
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--main-title-color);
+
+ @media screen and (min-width: 1200px) {
+   margin-bottom: 50px;
+   font-size: 36px;
+   line-height: calc(42 / 36);
+ }
 }
       
