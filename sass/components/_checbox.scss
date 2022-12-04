@@ -7,11 +7,23 @@
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: calc(24 / 14);
+  font-size: 8px;
+  line-height: calc(12 / 10);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  user-select: none; 
+  user-select: none;
+  
+  @media screen and (min-width: 390px) {
+      font-size: 9px;
+    }
+
+     @media screen and (min-width: 430px) {
+       font-size: 10px;
+     }
+
+ @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 
  @media screen and (min-width: 1200px) {
   font-size: 14px;

@@ -339,6 +339,8 @@ a {
   max-height: 400px;
   padding-bottom: 118px;
   padding-top: 118px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -382,6 +384,15 @@ a {
     max-height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg_desk@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg_desk@1x.jpg);
+    background-size: 1600px 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg_desk@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg_desk@2x.jpg);
   }
 }
 
@@ -753,7 +764,7 @@ a {
 }
 
 .footer-form__field {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   font-size: 16px;
@@ -765,6 +776,11 @@ a {
   color: var(--secondary-title-color);
   -webkit-transition: border-color var(--duration-timing);
   transition: border-color var(--duration-timing);
+}
+@media screen and (min-width: 768px) {
+  .footer-form__field {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer-form__field {
@@ -935,7 +951,7 @@ a {
 }
 
 .project__description {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   color: #FFFFFF;
 }
@@ -996,7 +1012,7 @@ a {
 }
 
 .modal__wrapper {
-  min-width: 450px;
+  min-width: 100%;
   min-height: 609px;
   padding: 40px;
   background: #FFFFFF;
@@ -1011,6 +1027,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .modal__wrapper {
+    min-width: 460px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1190,14 +1207,29 @@ a {
           align-items: center;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.7142857143;
+  font-size: 8px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 390px) {
+  .checkbox {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 430px) {
+  .checkbox {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .checkbox {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox {

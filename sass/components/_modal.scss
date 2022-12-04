@@ -19,7 +19,7 @@
 }
 
 .modal__wrapper {
-    min-width: 450px;
+    min-width: 100%;
     min-height: 609px;
     padding: 40px;
 
@@ -31,6 +31,7 @@
     transition: transform var(--duration-timing), opacity var(--duration-timing);
 
  @media screen and (min-width: 768px) {
+    min-width: 460px;
     position: absolute;
     top: 50%;
     left: 50%;
